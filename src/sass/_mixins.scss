@@ -1,0 +1,25 @@
+@mixin clearfix {
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+@mixin vertical-align {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin wrap {
+  max-width: $site-width;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+@mixin mobile-padding {
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
+}
